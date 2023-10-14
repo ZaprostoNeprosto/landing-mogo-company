@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300i;400;700&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/de7e5c9fe9.js" crossorigin="anonymous"></script>
         <title>Mogo</title>
     </head>
     <body>
@@ -35,7 +36,7 @@
                 </div>
             </div>
         </header>
-
+        <div class="page">
         <div class="intro">
             <div class="container">
                 <div class="intro_inner">
@@ -266,20 +267,31 @@
             </div> <!-- /.container -->
         </section>
 
+        <!-- Reviews 1 -->
         <div class="section section--gray">
             <div class="container">
-
                 <div class="reviews">
-                    <a class="reviews_btn reviews_btn--prev" href="#">Prev</a>
-                    <a class="reviews_btn reviews_btn--next" href="#">Next</a>
-
-                    <div class="reviews_item">
-                        <img class="reviews_photo" src="assets/images/avatar.png" alt="">
-                        <div class="reviews_text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-                        <div class="reviews_author">Jon Doe</div>
+                    <div class="swiper-container" data-slider-service>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+                                    <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                    <div class="reviews__author">Jon Doe</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+                                    <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                    <div class="reviews__author">Jon Doe</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -490,18 +502,28 @@
 
         <div class="section">
             <div class="container">
-
                 <div class="reviews">
-                    <a class="reviews_btn reviews_btn--prev" href="#">Prev</a>
-                    <a class="reviews_btn reviews_btn--next" href="#">Next</a>
-
-                    <div class="reviews_item">
-                        <img class="reviews_photo" src="assets/images/avatar.png" alt="">
-                        <div class="reviews_text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-                        <div class="reviews_author">Joshua Earle</div>
+                    <div class="swiper-container" data-slider-work>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+                                    <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                    <div class="reviews__author">Jon Doe</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+                                    <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                    <div class="reviews__author">Jon Doe</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -768,7 +790,10 @@
 
             </div><!-- /.container -->
         </footer>
+        </div><!-- /.page -->
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/js/app.js"></script>
 
     </body>
-
 </html>
