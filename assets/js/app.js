@@ -1,5 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+    // Collapse
+    const collapseLinks = document.querySelectorAll("[data-collapse]");
+
+    collapseLinks.forEach(function(link) {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            link.classList.toggle("active");
+        });
+    });
+
     // Sliders
     const sliderService = document.querySelector("[data-slider-service]");
 
