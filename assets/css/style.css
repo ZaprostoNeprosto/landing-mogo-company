@@ -185,6 +185,7 @@ hr {
     color: #fce38a;
 }
 
+
 /* Nav toggle */
 .nav-toggle {
     width: 30px;
@@ -338,6 +339,7 @@ hr {
     font-weight: 700;
 }
 
+
 /* Section */
 .section {
     padding: 80px 0;
@@ -401,8 +403,9 @@ hr {
 .section__text {
     font-size: 15px;
     color: #999;
-
 }
+
+
 
 /* Card */
 .card {
@@ -675,6 +678,8 @@ hr {
     color: #333;
     text-transform: uppercase;
 }
+
+
 
 /* Reviews */
 .reviews {
@@ -1040,7 +1045,6 @@ hr {
 }
 
 
-
 /* Map */
 
 .map {
@@ -1301,7 +1305,7 @@ hr {
 }
 
 
-/* Media */
+
 
 @media (max-width: 1230px) {
 

@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-
     // Menu nav toggle
     const navToggle = document.querySelector("#nav_toggle");
     const nav = document.querySelector("#nav");
