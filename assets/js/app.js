@@ -1,5 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+    // Menu nav toggle
+    const navToggle = document.querySelector("#nav_toggle");
+    const nav = document.querySelector("#nav");
+
+    navToggle.addEventListener("click", function(event) {
+        event.preventDefault();
+        navToggle.classList.toggle("active");
+        nav.classList.toggle("active");
+    });
+
     // Collapse
     const collapseLinks = document.querySelectorAll("[data-collapse]");
 
