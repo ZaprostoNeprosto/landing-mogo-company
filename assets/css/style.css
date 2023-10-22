@@ -692,7 +692,7 @@ hr {
 
 .reviews__item {
     min-height: 210px;
-    padding-left: 255px;
+    padding-left: 355px;
     position: relative;
 }
 
@@ -767,13 +767,15 @@ hr {
 }
 
 .swiper-button-next {
-    right: 0;
+    right: 30px;
     transform: rotate(135deg);
+    top: 100px;
 }
 
 .swiper-button-prev {
-    left: 0;
+    left: 30px;
     transform: rotate(-45deg);
+    top: 111px;
 }
 
 .swiper-container {
@@ -1304,8 +1306,14 @@ hr {
     color: #f38181;
 }
 
-
-
+@media (pointer: coarse) {
+    .swiper-button-next,
+    .swiper-button-prev,
+    .accordion__header,
+    .nav-toggle {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
 
 @media (max-width: 1230px) {
 
@@ -1629,8 +1637,16 @@ hr {
         padding: 0;
     }
 
-    .slick-arrow {
-        top: 18%;
+    .reviews .swiper-container {
+        padding: 30px;
+    }
+
+    .swiper-button-next {
+        right: 10px;
+    }
+
+    .swiper-button-prev {
+        left: 10px;
     }
 
     /* Logos */
